@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex6_table</title>
+    <style>
+      header > h1 {
+        font-size: 70px;
+        color: #0000ff;
+      }
+      table {
+        border-collapse: collapse;
+        border: 1px solid black;
+        width: 300px;
+      }
+      td {
+        border: 1px solid black;
+        height: 35px;
+        text-align: center;
+      }
+      #f1 {
+        width: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>테이블 병합</h1>
+    </header>
+    <article>
+      <table>
+        <tbody>
+          <tr>
+            <td id="f1" colspan="2" rowspan="3">1</td>
+            <td>2</td>
+            <td colspan="3">3 4 5</td>
+            <!-- <td>4</td>
+            <td>5</td> -->
+          </tr>
+          <tr>
+            <!-- <td >6</td> -->
+            <!-- <td>7</td> -->
+            <td>8</td>
+            <td>9</td>
+            <td rowspan="2">10</td>
+          </tr>
+          <tr>
+            <!-- <td>11</td>
+            <td>12</td> -->
+            <td>13</td>
+            <td>14</td>
+            <!-- <td>15</td> -->
+          </tr>
+        </tbody>
+      </table>
+    </article>
+  </body>
+</html>
