@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex5_table</title>
+    <style>
+      /* 테두리만 나옴 */
+      table {
+        width: 120;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid black;
+      }
+      .txt_r {
+        text-align: right;
+      }
+      /*  '>' : 자식 요소 */
+      /* thead의 자식 요소들 중 tr에게만 적용하는 곳 */
+      thead > tr {
+        height: 50px;
+        background-color: gray;
+      }
+      tfoot > tr {
+        height: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- 제목 -->
+      <h1>테이블 병합</h1>
+      <!-- 본문 -->
+      <article>
+        <div>
+          <table>
+            <colgroup>
+              <col width="100" />
+              <col width="*" />
+              <col width="150" />
+              <col width="80" />
+            </colgroup>
+            <tfoot>
+              <tr>
+                <!-- 4개의 열을 하나로 병합한다. -->
+                <td class="txt_r" colspan="4">자료제공: muhkeun's brain</td>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>홍길동</td>
+                <td>hong123@naver.com</td>
+                <td class="txt_r">010-1234-5678</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>임꺽정</td>
+                <td>im123@naver.com</td>
+                <td class="txt_r">010-4567-8900</td>
+                <td></td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th>이름</th>
+                <th>이메일</th>
+                <th>연락처</th>
+                <th>구분</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </article>
+      <footer>
+        <h2>바닥글</h2>
+      </footer>
+    </header>
+  </body>
+</html>

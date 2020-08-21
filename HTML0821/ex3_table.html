@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex3_table</title>
+    <style>
+      /* 테이블의 모양을 지정하기 위해 style을 적용하는 예제 */
+      /* 현재 문서에서 table이라는 태그들에게 적용한다.  */
+      table {
+        /* 테두리 */
+        border-collapse: collapse;
+        border: 1px;
+        border-style: solid;
+        border-color: red;
+        font-size: 50px;
+      }
+      /* 테이블 태그 안에 td 태그들 모두에게 적용한다. */
+      td,
+      th {
+        /* border: [size] [style] [color] */
+        border: 1px solid red;
+      }
+
+      /* id가 name인 요소(태그)인 곳에 너비를 120으로 지정 */
+      .name {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <!-- 테이블 머리글 -->
+      <thead>
+        <!-- 행 의미 -->
+        <tr>
+          <!-- th 태그 : 머리글에 사용, 가운데 맞춤, 볼드체 -->
+          <th>사번</th>
+          <th class="name">이름</th>
+          <th>직종</th>
+          <th>부서</th>
+        </tr>
+      </thead>
+      <!-- 테이블 바닥글 -->
+      <tfoot>
+        <!-- td 태그 : 왼쪽 맞춤 -->
+        <td>바닥1</td>
+        <td>바닥2</td>
+        <td>바닥3</td>
+        <td>바닥4</td>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>100</td>
+          <td>홍길동</td>
+          <td>IT</td>
+          <td>개발1팀</td>
+        </tr>
+        <tr>
+          <td>111</td>
+          <td>임꺽정</td>
+          <td>IT</td>
+          <td>개발2팀</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+    <table>
+      <!-- 테이블 머리글 -->
+      <thead>
+        <!-- 행 의미 -->
+        <tr>
+          <!-- th 태그 : 머리글에 사용, 가운데 맞춤, 볼드체 -->
+          <th>사번</th>
+          <th class="name">이름</th>
+          <th>직종</th>
+          <th>부서</th>
+        </tr>
+      </thead>
+      <!-- 테이블 바닥글 -->
+      <tfoot>
+        <!-- td 태그 : 왼쪽 맞춤 -->
+        <td>바닥1</td>
+        <td>바닥2</td>
+        <td>바닥3</td>
+        <td>바닥4</td>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>100</td>
+          <td>홍길동</td>
+          <td>IT</td>
+          <td>개발1팀</td>
+        </tr>
+        <tr>
+          <td>111</td>
+          <td>임꺽정</td>
+          <td>IT</td>
+          <td>개발2팀</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
