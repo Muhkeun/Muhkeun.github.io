@@ -4,11 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ex8_form</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        border: 1px solid black;
+      }
+      tr > td:first-child {
+        width: 80px;
+        background-color: #bcbcbc;
+        text-align: right;
+      }
+      td {
+        border: 1px solid black;
+      }
+      input {
+        /* 안쪽 여백 */
+        padding: 4px;
+        width: 100px;
+      }
+    </style>
   </head>
   <body>
     <div>
+      <h1>회원가입 폼 만들기</h1>
       <form action="" method="get">
         <label id="s_id">아이디: </label>
+        <!-- type이 생략될 때 text 가 기본 -->
         <input type="text" name="s_id" id="s_id" /><br />
         <label id="s_pw">비밀번호: </label>
         <input type="password" name="s_pw" id="s_pw" /><br />
@@ -16,8 +37,42 @@
         <input type="text" name="s_name" id="s_name" /><br />
         <label id="s_email">email: </label>
         <input type="email" name="s_email" id="s_email" /><br />
-        <input type="submit" value="로그인" onclick="test()" />
+        <button type="button">로그인</button>
       </form>
     </div>
+    <article>
+      <h1>폼을 테이블에 넣기</h1>
+      <header>
+        <div id="content">
+          <form action="" method="get">
+            <table>
+              <tbody>
+                <tr>
+                  <td><label for="s_id">아이디:</label></td>
+                  <td><input type="text" name="s_id" id="s_id" /><br /></td>
+                </tr>
+                <tr>
+                  <td><label for="s_pw">비밀번호: </label></td>
+                  <td><input type="password" name="s_pw" id="s_pw" /><br /></td>
+                </tr>
+                <tr>
+                  <td><label for="s_name">이름: </label></td>
+                  <td><input type="text" name="s_name" id="s_name" /><br /></td>
+                </tr>
+                <tr>
+                  <td><label for="s_email">email: </label></td>
+                  <td>
+                    <input type="email" name="s_email" id="s_email" /><br />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><button type="button">로그인</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </div>
+      </header>
+    </article>
   </body>
 </html>
