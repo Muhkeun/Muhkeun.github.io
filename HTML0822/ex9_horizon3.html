@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>수평메뉴</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        height: 80px;
+        margin: 0px;
+        background-color: #2e2e2e;
+      }
+      ul#menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+
+        /* li들이 모두 인라인레벨로 변경되어 하나의 문자열 처럼 인식
+        된다. 그러므로 li들을 감싸고 있는 ul의 line-height를 header 높이와
+        동일하게 하면 수직상의 정렬이 가운데 맞춤이 된다. */
+        font: 22px Arial;
+        display: flex;
+        justify-content: space-around;
+      }
+      ul#menu > li {
+        margin-right: 20px;
+        line-height: 80px;
+      }
+      ul#menu > li > a {
+        color: #bbbdbd;
+        text-decoration: none;
+      }
+      ul#menu > li > a:hover {
+        color: #ffffff;
+      }
+      ul#menu .selected {
+        color: #d7860e;
+        border-bottom: 4px solid #d7860e;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul id="menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">Benz</a></li>
+        <li><a href="">Hyundai</a></li>
+        <li><a href="">Audi</a></li>
+        <li><a href="" class="selected">BMW</a></li>
+      </ul>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이미지 수직메뉴</title>
+    <style>
+      /*  ul 태그들 중 아이디가 v_menu 요소에게 적용   */
+      ul#v_menu {
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        list-style: none;
+        /* 영역 보기 => border: 1px solid red; */
+      }
+      ul#v_menu > li {
+        margin: 0;
+        width: 300px;
+        height: 100px;
+        /* 영역 보기 => border: 1px solid blue; */
+      }
+      /* li태그 안에 존재하는 a태그를 선택하여, 크기를 li태그와 같게 한다. */
+      ul#v_menu > li > a {
+        display: block;
+        /* width : 300px, height : 300px */
+        width: 100%;
+        height: 100%;
+        /* 문자열을 보이지 않게 하기 위해서 화면 밖으로 빼내기 */
+        text-indent: -100px;
+      }
+      li#mail > a {
+        /* li태그들 중 아이디가 mail인 요소 안에 a태그 배경이미지로 현재 문서가 위치한 곳에서
+      image 라는 폴더 안에 mail.gif파일을 배경이미지로 지정한다. */
+        background-image: url(Src/menu_img/mail.gif);
+        /* background-position의 default 는 left top 이다. */
+        background-position: left top;
+        /* 배경 반복적용 안함 */
+        background-repeat: no-repeat;
+      }
+      li#mail > a:hover {
+        background-position: right top;
+      }
+      li#cafe > a {
+        background-image: url(Src/menu_img/cafe.gif);
+        /* background-position의 default 는 left top 이다. */
+        background-position: left top;
+        /* 배경 반복적용 안함 */
+        background-repeat: no-repeat;
+      }
+      li#cafe > a:hover {
+        background-position: right top;
+      }
+      li#blog > a {
+        background-image: url(Src/menu_img/blog.gif);
+        /* background-position의 default 는 left top 이다. */
+        background-position: left top;
+        /* 배경 반복적용 안함 */
+        background-repeat: no-repeat;
+      }
+      li#blog > a:hover {
+        background-position: right top;
+      }
+      li#kin > a {
+        background-image: url(Src/menu_img/kin.gif);
+        /* background-position의 default 는 left top 이다. */
+        background-position: left top;
+        /* 배경 반복적용 안함 */
+        background-repeat: no-repeat;
+      }
+      li#kin > a:hover {
+        background-position: right top;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>수직메뉴</h1>
+    <div id="menu">
+      <ul id="v_menu">
+        <li id="mail"><a href="">메&nbsp;&nbsp;&nbsp;일</a></li>
+        <li id="cafe"><a href="">카&nbsp;&nbsp;&nbsp;페</a></li>
+        <li id="blog"><a href="">블로그</a></li>
+        <li id="kin"><a href="">지식인</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>애플메뉴 실습</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        margin: 0;
+        background-color: #121212;
+        padding: 0;
+        height: 60px;
+      }
+      ul#menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+
+        font: 18px Arial;
+        display: flex;
+        justify-content: space-around;
+      }
+      ul#menu > li {
+        line-height: 60px;
+      }
+
+      ul#menu > li > a {
+        text-decoration: none;
+        color: #575757;
+      }
+
+      li#apple {
+        width: 20px;
+        height: 50px;
+      }
+      #applelink {
+        display: flex;
+        background-size: 20px 50px;
+        background-position: 58%;
+        text-indent: -1000000px;
+        background-repeat: no-repeat;
+        background-image: url(src/menu_img/apple.svg);
+      }
+      ul#menu > li > a:hover {
+        color: #fffffe;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul id="menu">
+        <li id="apple"><a href="" id="applelink">apple</a></li>
+        <li id="Mac"><a href="">Mac</a></li>
+        <li id="iPad"><a href="">iPad</a></li>
+        <li id="iPhone"><a href="">iPhone</a></li>
+        <li id="Watch"><a href="">Watch</a></li>
+        <li id="TV"><a href="">TV</a></li>
+        <li id="Music"><a href="">Music</a></li>
+        <li id="Support"><a href="">Support</a></li>
+      </ul>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이미지 수직메뉴2</title>
+    <style>
+      ul#v_menu {
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        list-style: none;
+      }
+      ul#v_menu > li {
+        height: 100px;
+        width: 300px;
+      }
+      ul#v_menu > li > a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        text-indent: -100px;
+      }
+
+      li#mail > a {
+        background-image: url(src/menu_img/mail_a.gif);
+      }
+      li#mail > a:hover {
+        background-position: center;
+      }
+      li#mail > a:active {
+        background-position: bottom;
+      }
+      li#cafe > a {
+        background-image: url(src/menu_img/cafe_a.gif);
+      }
+      li#cafe > a:hover {
+        background-position: center;
+      }
+      li#cafe > a:active {
+        background-position: bottom;
+      }
+      li#blog > a {
+        background-image: url(src/menu_img/blog_a.gif);
+      }
+      li#blog > a:hover {
+        background-position: center;
+      }
+      li#blog > a:active {
+        background-position: bottom;
+      }
+      li#kin > a {
+        background-image: url(src/menu_img/kin_a.gif);
+      }
+      li#kin > a:hover {
+        background-position: center;
+      }
+      li#kin > a:active {
+        background-position: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>수직메뉴</h1>
+    <div id="menu">
+      <ul id="v_menu">
+        <li id="mail"><a href="">메&nbsp;&nbsp;&nbsp;일</a></li>
+        <li id="cafe"><a href="">카&nbsp;&nbsp;&nbsp;페</a></li>
+        <li id="blog"><a href="">블로그</a></li>
+        <li id="kin"><a href="">지식인</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

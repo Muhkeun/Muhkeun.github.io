@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vertical menu</title>
+    <style>
+      #v_menu {
+        border-top: 2px solid black;
+        /* border: 2px solid black; */
+        width: 200px;
+        /* list-style: list item 앞에 점을 삭제 */
+        list-style: none;
+        /* padding: 안쪽 여백 */
+        /* padding-left:0 => 왼쪽 여백을 0으로 처리 */
+        padding-left: 0;
+        /* 바깥쪽 여백의 사방을 모두 0으로 처리 */
+        margin: 0;
+      }
+      #v_menu > li {
+        /* id가 v_menu인 ul태그의 자식들 중 이름이
+          li인 요소들만 선택 적용한다. */
+        border: 2px solid black;
+        border-top: none;
+        /* border-bottom에 2px이 있기 때문에 58px을 줘야
+        60px 메뉴가 완성됨. => 선두께 생각하자 */
+        height: 58px;
+        /* 너비는 200px로 지정하려 한다. */
+        width: 196px;
+        text-align: center;
+        background-color: #00bfff;
+      }
+      #v_menu > li > a {
+        /* a태그의 크기를 조정할 수 없으므로 a태그를 block level로 변경 시킨다. */
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 1px solid red;
+        /* 행높이도 맞춰줘야 가운데로 온다. */
+        line-height: 58px;
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: bold;
+        color: #000;
+      }
+      /* a:hover => 각 a 태그에 마우스를 올렸을 때 */
+      #v_menu > li > a:hover {
+        background-color: #fff;
+        color: #00bfff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>수직 메뉴</h1>
+    <div id="menu">
+      <ul id="v_menu">
+        <li><a href="">메&nbsp;&nbsp;&nbsp;일</a></li>
+        <li><a href="">카&nbsp;&nbsp;&nbsp;페</a></li>
+        <li><a href="">블로그</a></li>
+        <li><a href="">지식인</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
