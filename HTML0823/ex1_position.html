@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포지션</title>
+    <style>
+      #wrap {
+        border: 2px solid red;
+        width: 600px;
+        padding: 10px;
+        /* 위/아래, 좌/우 */
+        margin: 30px auto;
+      }
+      #wrap > div {
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+        /* 상대적인 위치 */
+        /* position: relative; */
+        /* 절대적 위치 */
+        position: absolute;
+      }
+      #box1 {
+        background-color: #f00;
+        top: 20px;
+        left: 20px;
+      }
+      #box2 {
+        background-color: #0f0;
+        top: 30px;
+        left: 30px;
+      }
+      #box3 {
+        background-color: #00f;
+        top: 40px;
+        left: 40px;
+      }
+      #box4 {
+        background-color: blueviolet;
+        top: 500px;
+        right: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="box1"></div>
+      <div id="box2"></div>
+      <div id="box3"></div>
+      <div id="box4"></div>
+    </div>
+  </body>
+</html>
